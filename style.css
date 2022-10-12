@@ -1,0 +1,332 @@
+*{
+    margin: auto;
+    /* font-family: 'Heebo', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.icon{
+    display: none;
+}
+
+.topnav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1rem;
+    padding-inline-start: 0;
+    align-self: start;
+    background-color: ghostwhite;
+}
+
+#myLinks{
+    display: flex;
+    flex-direction: row;
+}
+
+#myLinks  a{
+    color: gray;
+    text-decoration: solid;
+    transition: color 1s ease;
+    padding-right: 2rem;
+    font-size: large;
+}
+
+#myLinks  a:hover{
+    color:rgba(0, 0, 0, 0.87);
+    text-decoration:underline;
+}
+
+.active{
+    text-align: left;
+    font-size: xx-large;
+    padding: 1rem;
+    color: gray;
+    text-decoration: solid;
+    transition: color 1s ease;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~section1 main~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 255, 170, 0.747),
+        rgba(0, 47, 255, 0.719)
+      ), url(img/code.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-height: 40rem;
+}
+
+.coordimg{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    background-color: ghostwhite;
+    border-radius: 60px;
+}
+.job{
+    display: flex;
+    flex-direction: column-reverse;
+    color: rgba(0, 0, 0, 0.726);
+    padding-top: 1rem;
+}
+.job h1{
+    font-size: x-large;
+    border-bottom: solid;
+    margin-bottom: 1rem;
+}
+.job h2{
+    font-size: xx-large;
+    margin-bottom: 0.5rem;
+}
+.coordimg img{
+    max-width: 20rem;
+    border-radius: 100%;
+    background: linear-gradient(0deg, rgba(0, 255, 170, 0.747) 0%, rgba(0, 47, 255, 0.719) 100%);
+}
+.coord{
+    margin-left: 7rem;
+    font-size: x-large;
+    text-align: left;
+    font-weight: 540;
+    color: rgb(87, 86, 86);
+    
+}
+.coord div:not(:last-child){
+    margin-bottom: 1rem;
+}
+.coord a{
+    text-decoration: underline;
+    color: rgb(87, 86, 86);
+    transition: color 1s ease;
+}
+.coord a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.reso{
+    border-radius: 60px;
+}
+.reso i{
+    color: ghostwhite;
+    padding: 0.5rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Section 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    background-color:beige;
+}
+.section2 h2{
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+#form{
+    font-size: xx-large;
+    background-color:ghostwhite;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+#exp{
+    font-size: xx-large;
+    background-color:ghostwhite;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.divrow{
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+}
+.divcollumn{
+    width: 30rem;
+    padding: 2rem;
+    
+}
+.padbot{
+    margin-bottom: 0.5rem;
+}
+hr{
+    color: black;
+    font-size: larger;
+    width: 45%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~section3~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#compt{
+    background-color: darkblue;
+    color: ghostwhite;
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 1.3rem;
+    padding-top: 1rem;
+    margin-bottom: 2px;
+}
+.listcompt{
+    background-image: url(img/binary-code-background_88211-416.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: ghostwhite;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5rem 2rem;
+    min-height: 300px;
+    
+    justify-content: center;
+}
+
+.listcompt button{
+    background-color: rgba(50, 50, 241, 0.651);
+    color: ghostwhite;
+    list-style: none;
+    font-size: x-large;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    height: 125px;
+}
+.listcompt button li:hover{
+    width: 20rem;
+    font-size: 120%;
+}
+.listcompt button li{
+    padding: 2rem;
+    width: 16rem;
+    
+}
+#compp{
+    background-color: darkblue;
+    color: ghostwhite;
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 1.3rem;
+    padding-top: 1rem;
+    margin: 2px 0;
+
+}
+.listcompp{
+    background-image: url(img/binary-code-background_88211-416.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: ghostwhite;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5rem 0;
+    min-height: 400px;
+}
+.listcompp button{
+    background-color: rgba(50, 50, 241, 0.651);
+    color: ghostwhite;
+    list-style: none;
+    font-size: x-large;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    height: 140px;
+}
+.listcompp button li:hover{
+    width: 20rem;
+    
+    font-size: 120%;
+}
+.listcompp button li{
+    padding: 2rem;
+    width: 16rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~Section 4~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    background-color:beige;
+    
+}
+#prop{
+    font-size: xx-large;
+    background-color:ghostwhite;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+}
+.proptxt{
+    text-align: center;
+    margin: 1rem 18rem;
+    padding-top: 2rem;
+    font-size: larger ;
+    font-weight: 530;
+    line-height: 2rem;
+}
+.tkt{
+    text-align: right;
+    background-color: beige;
+    padding: 1rem 2rem;
+    text-decoration: underline;
+}
+
+@media(max-width: 768px) {
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~navbar~~~~~~~~~~~~~~~~~~~~~~ */
+
+    .topnav{
+    overflow: hidden;
+    background-color: ghostwhite;
+    position: relative;
+    display: block;
+    }
+
+    .navnom{
+        font-size: xx-large;
+    }
+    
+    .topnav #myLinks {
+    display: none;
+    }
+    
+    .topnav a {
+    color: grey;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-size: large;
+    }
+    
+    .topnav a.icon {
+    background: ghostwhite;
+    position: absolute;
+    font-size: large;
+    right: 5px;
+    top: 15px;
+    }
+    
+    .topnav a:hover {
+    background-color: ghostwhite;
+    justify-content: center;
+    }
+    #myLinks  a:hover{
+        color: grey;
+        text-decoration:none;
+    }
+
+    .active{
+        font-weight: 600;
+    }
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~Section 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
