@@ -206,7 +206,7 @@ hr{
 .listcompt button li{
     padding: 2rem;
     width: 16rem;
-    
+    transition: 0.5s;
 }
 #compp{
     background-color: darkblue;
@@ -246,8 +246,8 @@ hr{
     font-size: 120%;
 }
 .listcompp button li{
-    padding: 2rem;
     width: 16rem;
+    transition: 0.5s;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~Section 4~~~~~~~~~~~~~~~~~~~~~~~~~~ */
