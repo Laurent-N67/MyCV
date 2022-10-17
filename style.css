@@ -326,5 +326,33 @@ hr{
 
     .active{
         font-weight: 600;
-    }}
+    }
     /* ~~~~~~~~~~~~~~~~~~~~~~~~Section 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .section1{
+        max-width: max-content;
+    }
+    .coordimg{
+        flex-direction: column;
+        border-radius: 0 30px;
+    }
+    .coordimg img{
+        max-width: 15rem;
+    }
+    .coord{
+        margin: 0;
+    }
+    .job{
+        padding: 1rem;
+    }
+    .job h1{
+        font-size: 35px;
+        padding-top: 0.5rem;
+        text-transform: uppercase;
+    }
+    .job h2{
+        display: none;
+    }
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~A propos~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .proptxt{
+        padding: 0 1rem 3rem;
+    }}
