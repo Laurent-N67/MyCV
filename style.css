@@ -31,7 +31,7 @@
     text-decoration:underline;
 }
 
-.active{
+.nom{
     text-align: left;
     font-size: xx-large;
     padding: 1rem;
@@ -246,6 +246,11 @@ hr{
     transition: 0.5s;
 }
 
+.slideshow-container{
+    display: none;
+}
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~Section 4~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .section4{
@@ -365,6 +370,7 @@ hr{
     }
     .divcollumn{
         width: 100%;
+        text-align: center
     }
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~Compétences~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -382,10 +388,9 @@ hr{
         font-size: 100%;
     }
     .listcompt button li:hover{
-        max-width: 12rem;
+        width: 12rem;
         font-size: 100%;
     }
-
 }
 @media (min-width: 426px) and (max-width: 625px){
     .listcompp{
@@ -394,4 +399,163 @@ hr{
     .listcompt{
         grid-template-columns: repeat(2, 1fr);
     }
+}
+@media (min-width:376px) and (max-width: 426px){
+    
+    .topnav{
+        overflow: hidden;
+        background-color: ghostwhite;
+        position: relative;
+        display: block;
+        }
+    
+        .navnom{
+            font-size: xx-large;
+        }
+        
+        .topnav #myLinks {
+        display: none;
+        }
+        
+        .topnav a {
+        color: grey;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        font-size: large;
+        }
+        
+        .topnav a.icon {
+        background: ghostwhite;
+        position: absolute;
+        font-size: large;
+        right: 5px;
+        top: 15px;
+        }
+        
+        .topnav a:hover {
+        background-color: ghostwhite;
+        justify-content: center;
+        }
+        #myLinks  a:hover{
+            color: grey;
+            text-decoration:none;
+        }
+    
+        .active{
+            font-weight: 600;
+        }
+        
+    /* ~~~~~~~~~~~~~~~~~~~~~Section 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .section1{
+        max-width: max-content;
+    }
+    .coordimg{
+        flex-direction: column;
+        border-radius: 0 30px;
+    }
+    .coordimg img{
+        max-width: 15rem;
+    }
+    .coord{
+        margin: 0;
+    }
+    .job{
+        padding: 1rem;
+    }
+    .job h1{
+        font-size: 35px;
+        padding-top: 0.5rem;
+        text-transform: uppercase;
+    }
+    .job h2{
+        display: none;
+    }
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~A propos~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .proptxt{
+        padding: 0 1rem 3rem;
+    }
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~Formation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    #form{
+        padding-bottom: 0;
+    }
+    #exp{
+        padding-bottom: 0;
+    }
+    .divrow{
+        flex-direction: column;
+    }
+    .divcollumn{
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    .listcompt {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .listcompt button{
+        margin-bottom: 0;
+    }
+    .listcompt button li{
+        width: 16rem;
+    }
+    .listcompt button li:hover{
+        width: 16rem;
+        font-size: 100%;
+    }
+    .listcompp{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        min-height: fit-content;
+    }
+    .listcompp button{
+        margin-bottom: 0;
+    }
+    .listcompp button li{
+        width: 16rem;
+    }
+
+    .listcompp button li:hover{
+        width: 16rem;
+        font-size: 100%;
+    }
+    
+    /* ~~~~~~~~~~~~~~~~~~~~~~slider~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    .slideshow-container{
+        display: block;
+    }
+    .desktopul{
+        display: none;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+
 }
