@@ -275,7 +275,8 @@ hr{
     text-decoration: underline;
 }
 
-@media(max-width: 768px) {
+
+@media (min-width: 426px) and (max-width: 768px) {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~navbar~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -362,6 +363,9 @@ hr{
     .divrow{
         flex-direction: column;
     }
+    .divcollumn{
+        width: 100%;
+    }
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~Compétences~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
     
@@ -371,16 +375,23 @@ hr{
     }
     .listcompp button li{
         width: 12rem;
-        
     }
 
     .listcompp button li:hover{
-        width: 100%;
+        width: 12rem;
         font-size: 100%;
     }
     .listcompt button li:hover{
-        width: 16rem;
+        max-width: 12rem;
         font-size: 100%;
     }
 
+}
+@media (min-width: 426px) and (max-width: 625px){
+    .listcompp{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .listcompt{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

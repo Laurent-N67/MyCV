@@ -54,9 +54,15 @@
 .textmdl{
   padding: 2rem;
 }
-@media(max-width: 768px){
+
+@media (min-width: 426px) and (max-width: 768px){
 
   .modal-content{
     width: 60%;
+  }
+}
+@media (min-width: 426px) and (max-width: 625px){
+  .modal-content{
+    width: 90%;
   }
 }
