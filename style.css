@@ -172,7 +172,7 @@ hr{
     text-align: center;
     padding-bottom: 1.3rem;
     padding-top: 1rem;
-    margin-bottom: 2px;
+    margin: 2px 0;
 }
 .listcompt{
     background-image: url(img/binary-code-background_88211-416.jpg);
@@ -182,10 +182,8 @@ hr{
     text-decoration: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 5rem 2rem;
+    padding: 5rem 0;
     min-height: 300px;
-    
-    justify-content: center;
 }
 
 .listcompt button{
@@ -204,7 +202,6 @@ hr{
     font-size: 120%;
 }
 .listcompt button li{
-    padding: 2rem;
     width: 16rem;
     transition: 0.5s;
 }
@@ -242,7 +239,6 @@ hr{
 }
 .listcompp button li:hover{
     width: 20rem;
-    
     font-size: 120%;
 }
 .listcompp button li{
@@ -355,4 +351,36 @@ hr{
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~A propos~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
     .proptxt{
         padding: 0 1rem 3rem;
-    }}
+    }
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~Formation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    #form{
+        padding-bottom: 0;
+    }
+    #exp{
+        padding-bottom: 0;
+    }
+    .divrow{
+        flex-direction: column;
+    }
+    /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~Compétences~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    
+    .listcompt button li{
+        width: 12rem;
+        transition: 0.5s;
+    }
+    .listcompp button li{
+        width: 12rem;
+        
+    }
+
+    .listcompp button li:hover{
+        width: 100%;
+        font-size: 100%;
+    }
+    .listcompt button li:hover{
+        width: 16rem;
+        font-size: 100%;
+    }
+
+}
