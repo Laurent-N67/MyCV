@@ -67,3 +67,8 @@
     width: 90%;
   }
 }
+@media (min-width:376px) and (max-width: 426px){
+  .modal-content{
+    width: 90%;
+  }
+}
