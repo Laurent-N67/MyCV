@@ -1,8 +1,17 @@
 *{
     margin: auto;
-    /* font-family: 'Heebo', sans-serif; */
-    font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
+    font-family: 'Quicksand' , 'sans-serif';
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url("font/Quicksand-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url("odysseecraft.net/public_html/font/Quicksand-Regular.ttf") format("truetype");
+    font-weight: 400;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -269,7 +278,6 @@ hr{
     margin:auto;
     padding-bottom: 3rem;
     font-size: larger ;
-    font-weight: 530;
     line-height: 1.8rem;
     max-width: 45rem;
 }
