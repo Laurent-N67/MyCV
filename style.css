@@ -10,8 +10,13 @@
 }
 @font-face {
     font-family: 'Quicksand';
-    src: url("odysseecraft.net/public_html/font/Quicksand-Regular.ttf") format("truetype");
+    src: url("font/Quicksand-Regular.ttf") format("truetype");
     font-weight: 400;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: url("font/Quicksand-Medium.ttf") format("truetype");
+    font-weight: 500;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -27,12 +32,13 @@
     background-color: ghostwhite;
 }
 
-#myLinks  a{
+#myLinks a{
     color: gray;
     text-decoration: solid;
     transition: color 1s ease;
     padding-right: 2rem;
     font-size: large;
+    font-weight: 500;
 }
 
 #myLinks  a:hover{
@@ -43,6 +49,7 @@
 .nom{
     text-align: left;
     font-size: xx-large;
+    font-weight: 600;
     padding: 1rem;
     color: gray;
     text-decoration: solid;
@@ -97,7 +104,7 @@
     margin-left: 7rem;
     font-size: x-large;
     text-align: left;
-    font-weight: 540;
+    font-weight: 500;
     color: rgb(87, 86, 86);
 }
 .coord div:not(:last-child){
@@ -156,13 +163,15 @@
 .divrow{
     display: flex;
     flex-direction: row;
-    font-size: large;
     padding: 1.5rem;
 }
 .divcollumn{
-    width: 30rem;
+    width: 40rem;
     padding: 2rem;
-    
+    font-size: x-large;
+}
+.divcollumn p{
+    font-weight: 500;
 }
 .padbot{
     margin-bottom: 0.5rem;
@@ -277,9 +286,10 @@ hr{
     text-align: center;
     margin:auto;
     padding-bottom: 3rem;
-    font-size: larger ;
+    font-size: x-large ;
     line-height: 1.8rem;
     max-width: 45rem;
+    font-weight: 500;
 }
 .tkt{
     text-align: right;
